@@ -35,13 +35,18 @@ if choice1 == "left":
                              '"Red", "yellow", "blue".\n'
                              'What do you choose?\n').lower()
      if choice3 == "yellow":
-         print("You found the treasure. You win!")
+         choice4 = input('You see 2 trapdoors, black and brown.\n'
+                         'What do you pick?\n')
+         if choice4 == "black":
+             print("You fell to your death. Game Over.")
+         else:
+             print("You found the treasure. You win!")
      elif choice3 == "red":
          print("You entered a room of fire. Game Over.")
      elif choice3 == "blue":
          print("You entered a room of beasts. Game Over.")
      else:
-        print("Game Over.")
+        print("You chose a door which doesn't exist. Game Over.")
     else:
         print("You got attacked by angry trout. Game Over.")
 else:
