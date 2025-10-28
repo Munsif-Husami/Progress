@@ -18,3 +18,8 @@ else:
 #2nd Approach
 who_picked = random.choice(friends)
 print(f"{who_picked} will pay the bill")
+
+#3rd Approach
+
+who_picked = random.choice(friends)
+print(who_picked)
