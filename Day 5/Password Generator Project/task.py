@@ -7,4 +7,21 @@ nr_letters = int(input("How many letters would you like in your password?\n"))
 nr_symbols = int(input(f"How many symbols would you like?\n"))
 nr_numbers = int(input(f"How many numbers would you like?\n"))
 
+#Easy Level
+import random
+
+#Still struggling - will take another crack later
+
+pw_list = []
+char = []
+for char in letters:
+    if char > pw_list:
+        pw_list = char
+for sym in symbols:
+    if sym > 0:
+        pw_list.append(sym)
+for num in numbers:
+    if nr_numbers >= 0:
+        pw_list.append(num)
+print(pw_list)
 
