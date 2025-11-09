@@ -8,20 +8,20 @@ nr_symbols = int(input(f"How many symbols would you like?\n"))
 nr_numbers = int(input(f"How many numbers would you like?\n"))
 
 #Easy Level
-import random
-pw_list = ""
-
-for char in range(0, nr_letters):
-    pw_list += random.choice(letters)
-
-for sym in range(0, nr_symbols):
-    pw_list += random.choice(symbols)
-
-for num in range(0, nr_numbers):
-    pw_list += random.choice(numbers)
-
-print(pw_list)
-print(f"Your password is {pw_list}")
+# import random
+# pw_list = ""
+#
+# for char in range(0, nr_letters):
+#     pw_list += random.choice(letters)
+#
+# for sym in range(0, nr_symbols):
+#     pw_list += random.choice(symbols)
+#
+# for num in range(0, nr_numbers):
+#     pw_list += random.choice(numbers)
+#
+# print(pw_list)
+# print(f"Your password is {pw_list}")
 
 #You're a stupid fuck because you needed to look at the code. FUCK YOU. NEVER let Claude show you code.
 # \n You struggled 3 days with no code for what? Just to forget to tell Claude no code.
@@ -31,14 +31,14 @@ print(f"Your password is {pw_list}")
 #Hard Level
 import random
 pw = []
-for char in range(0, nr_letters):
-    pw += random.choice(letters)
-
-for sym in range(0, nr_symbols):
-    pw += random.choice(symbols)
-
-for num in range(0, nr_numbers):
-    pw += random.choice(numbers)
+# for char in range(0, nr_letters):
+#     pw += random.choice(letters)
+#
+# for sym in range(0, nr_symbols):
+#     pw += random.choice(symbols)
+#
+# for num in range(0, nr_numbers):
+#     pw += random.choice(numbers)
 
 #Keep in mind += and append() do the same thing here. You're just adding data to the list here.
 
