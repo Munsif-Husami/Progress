@@ -11,6 +11,7 @@ def get_details():
 
 get_details()
 
+#Code for Hurdles 2
 
 def turn_around():
     turn_left()
@@ -37,3 +38,25 @@ def jump():
 hurdles = range(0, 6)
 while not at_goal() == True:
     jump()
+
+
+#Code for Hurdles 3
+def turn_right():
+    turn_left()
+    turn_left()
+    turn_left()
+
+def jump():
+    turn_left()
+    move()
+    turn_right()
+    move()
+    turn_right()
+    move()
+    turn_left()
+
+while not at_goal():
+    if front_is_clear():
+        move()
+    else:
+        jump()
