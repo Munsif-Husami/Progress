@@ -60,3 +60,29 @@ while not at_goal():
         move()
     else:
         jump()
+
+
+#Code for Hurdles 4
+
+def jump():
+    while wall_on_right():
+        turn_left()
+        move()
+        if right_is_clear():
+            turn_right()
+            move()
+            turn_right()
+            while front_is_clear():
+                move()
+        elif wall_in_front():
+            pause()
+            turn_right()
+
+
+while not at_goal():
+    if wall_in_front():
+        jump()
+        while not right_is_clear():
+            jump()
+    else:
+        move()
