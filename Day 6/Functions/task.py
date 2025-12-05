@@ -88,3 +88,23 @@ while not at_goal():
         jump()
     else:
         move()
+
+#Code for Maze
+
+def turn_right():
+    turn_left()
+    turn_left()
+    turn_left()
+
+
+def wall_trace():
+    if right_is_clear():
+        turn_right()
+
+
+while not at_goal():
+    wall_trace()
+    if wall_in_front():
+        turn_left()
+    else:
+        move()
