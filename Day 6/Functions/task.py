@@ -89,7 +89,7 @@ while not at_goal():
     else:
         move()
 
-#Code for Maze
+#My Code for Maze
 
 def turn_right():
     turn_left()
@@ -108,3 +108,14 @@ while not at_goal():
         turn_left()
     else:
         move()
+
+#Instructor code for Maze
+
+while not at_goal():
+    if right_is_clear():
+        turn_right()
+        move()
+    elif front_is_clear():
+        move()
+    else:
+        turn_left()
