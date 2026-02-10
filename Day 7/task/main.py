@@ -27,7 +27,7 @@ for alfaaz in chosen_word:
 
 display = ""
 for harf in chosen_word:
-    if harf == guess:
+    if harf in guess:
         print(guess)
     else:
-        print(" ".join(placeholder))
+        print(" ".join(range(placeholder)))
