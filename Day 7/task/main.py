@@ -19,15 +19,11 @@ guess = input("Guess a letter: ").lower()
 
 # TODO-2: Create a "display" that puts the guess letter in the right positions and _ in the rest of the string.
 
-for alfaaz in chosen_word:
-    if alfaaz == guess:
-        print("Right")
-    else:
-        print("Wrong")
-
-display = ""
+display = []
 for harf in chosen_word:
-    if harf in guess:
-        print(guess)
+    if harf == guess:
+        display.append(guess)
     else:
-        print(" ".join(range(placeholder)))
+        display.append("_")
+
+print(" ".join(display))
