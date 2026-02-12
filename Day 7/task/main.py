@@ -27,3 +27,24 @@ for harf in chosen_word:
         display.append("_")
 
 print(" ".join(display))
+
+# TODO-1: - Use a while loop to let the user guess again.
+
+while not display == chosen_word:
+    print(input("Guess Again: ").lower())
+    for harf in chosen_word:
+        if harf == guess:
+            display.append(guess)
+        else:
+            print("You've won! Yay!")
+
+# TODO-2: Change the for loop so that you keep the previous correct letters in display.
+
+for harf in chosen_word:
+    if harf == guess:
+        display += harf
+    else:
+        display += "_"
+        print("You lost a life.")
+
+print(display)
