@@ -15,61 +15,24 @@ print(placeholder)
 guess = input("Guess a letter: ").lower()
 
 display = ""
-
-display = ""
+matches = []
 for harf in chosen_word:
     if harf == guess:
-        display += guess
+       display += guess
     else:
-        display += "_"
+         display += "_"
 
-
-# TODO-2: Change the for loop so that you keep the previous correct letters in display.
-
-matches = []
-
-guess2 = input("Guess again :")
-
-while display != chosen_word:
+while not display == chosen_word:
+    guess = input("Guess a letter: ").lower()
     for harf in chosen_word:
-        if harf == guess2:
-            matches += guess2
-            display += guess2
-
+        if harf == guess:
+            matches += harf
+            display += guess
+        elif not harf == guess:
+            display += "_"
 
 print(display)
 
-#Here's what your flowchart should map out:
-# START
-# ↓
-# Initialize (word selection, lives, matches list, etc.)
-# ↓
-# WHILE LOOP starts (game not over)
-# ↓
-# Set display to empty string
-# ↓
-# Get player's guess (input)
-# ↓
-# FOR LOOP through each letter in chosen_word
-#
-# Is letter == current guess? → Add to matches
-# Is letter == current guess OR in matches? → Add letter to display
-# Otherwise → Add underscore to display
-# ↓
-# Print display
-# ↓
-# Check win/loss conditions
-# All letters found? → WIN, exit loop
-# Out of lives? → LOSE, exit loop
-# Otherwise → loop continues
-# ↓
-# END
-#
-# Key things to show in your flowchart:
-#
-# The nested structure: while loop contains the input, which contains the for loop
-# Where variables reset (display = "" each turn)
-# Where variables accumulate (matches grows)
-# Decision points (diamonds): equality checks, win/loss checks
-#
-# Would you like me to clarify any specific part of this flow before you draw it out?
+# TODO-2: Change the for loop so that you keep the previous correct letters in display.
+
+
